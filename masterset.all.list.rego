@@ -8,7 +8,7 @@ permsNotSatisfied := requiredPerms - userPerms
 numberOfUnsatisfiedPerms := count(permsNotSatisfied)
 
 result[msg] {
-    numberOfUnsatisfiedPerms == 1
+    numberOfUnsatisfiedPerms == 0
     msg :=  { "message": "All conditions met", "permitted": true }
 }
 
